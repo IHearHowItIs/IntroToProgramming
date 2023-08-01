@@ -10,6 +10,17 @@ public class HelloWorld{
      */
 
     // method - reusable code
+    // method signature: <access modifier><non access modifier><return type><name of method>(<parameters>)
+    // Acess Modifiers:
+    /*
+     * -public: available all throughout program
+     * -private: Can only be accessed within the class
+     *      if we want to manipulate or view the values of private fields
+     *      we have to use getter and setter methods
+     * -protected: available within the class, by all subclasses, as we as
+     *      by any class that is declared within the same package
+     * -default: available in class and same package
+     */
     public static int favoriteNumber(){
         return 22;
     }
