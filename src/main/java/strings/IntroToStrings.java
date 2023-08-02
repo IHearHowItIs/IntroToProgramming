@@ -12,6 +12,20 @@ public class IntroToStrings {
     //NOTE: variables and methods are written in camelCasing:lowercase first word, uppercase next words
     public String helloString = "Hello Everyone!";
 
+    //This is our first look at a constructor
+    //a constructor is a special method
+    //note the return type of this method and the name or identifier of this
+    //method are basically morphed into one
+
+    //no args constructor - takes in no arguments/parameters
+    public IntroToStrings(){
+        helloString = "I'm in the default constructor";
+    }
+
+    public IntroToStrings(String helloString){
+        this.helloString = helloString;
+    }
+
     private String privateString = "Haha you can't see me";
 
     //public means it will be accessible anywhere
@@ -20,6 +34,14 @@ public class IntroToStrings {
 
     public int stringCount(String input){
         return input.length();
+    }
+    
+    //This is our first look at a 'getter' method
+    //A getter method (or accessor method) allows us to acess
+    //a value that would be otherwise unaccessable bc it is defined as private
+    public String getPrivateString(){
+        privateString = privateString.replace('a', 'i');
+        return privateString;
     }
 
 }

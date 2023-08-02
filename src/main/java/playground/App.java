@@ -6,7 +6,9 @@ import main.java.strings.IntroToStrings;
 public class App {
     
     public static void main(String[] args) {
+
         IntroToStrings stringsClass = new IntroToStrings();
+        IntroToStrings stringsClass2 = new IntroToStrings("Day 3 was Great");
 
         String welcome = stringsClass.helloString;
         String hello = "Hello Everyone!";
@@ -24,6 +26,17 @@ public class App {
         int favNumber = HelloWorld.favoriteNumber();
         System.out.println(HelloWorld.favoriteNumber());
         System.out.println(favNumber);
+
+        System.out.println(stringsClass.helloString);
+        System.out.println(stringsClass2.helloString);
+        System.out.println(stringsClass.attendance);
+        System.out.println(stringsClass2.attendance);
+
+        stringsClass2.attendance += 7;
+
+         //changing a static variable changes it for all instances of that class
+        //that's why stringsClass attendance number is changed too
+         System.out.println(stringsClass.attendance);
     }
 
 }
