@@ -1,6 +1,7 @@
 package main.java.playground;
 
 import main.java.HelloWorld;
+import main.java.controlflow.IntroToControlFlow;
 import main.java.strings.IntroToStrings;
 //NOTE: The Object is the parent class for ALL objects created in Java
 public class App {
@@ -37,6 +38,18 @@ public class App {
          //changing a static variable changes it for all instances of that class
         //that's why stringsClass attendance number is changed too
          System.out.println(stringsClass.attendance);
+
+         //Practicing with our control flow statements and iteratives
+
+         IntroToControlFlow practiceInstance = new IntroToControlFlow();
+
+         System.out.println(practiceInstance.ifStatement("Wednesday"));
+         System.out.println(practiceInstance.ifStatement("wednesday"));
+
+         System.out.println(practiceInstance.ifElseStatement("Apple"));
+         System.out.println(practiceInstance.ifElseStatement("Pineapple"));
+
+         System.out.println(practiceInstance.forLoopIterative());
     }
 
 }
